@@ -13,7 +13,7 @@ Soit un ensemble de points :
 1. On trace une ligne
 
 
-| 2. Calcul des résiduels<br><br><img src="img/machine_learning/LR1_.png" width="300"/> <br>(résiduels = somme des carrés des distances) | 3. On pivote légèrement la ligne <br><img src="img/machine_learning/LR_2.png" width="300"/> <br> |
+| 2. Calcul des résiduels<br><br><img src="img/machine_learning/LR_1.png" width="300"/> <br>(résiduels = somme des carrés des distances) | 3. On pivote légèrement la ligne <br><img src="img/machine_learning/LR_2.png" width="300"/> <br> |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 4. On refait les calculs, et bis repetita
 5. On compare le résultat des différentes lignes
