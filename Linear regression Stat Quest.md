@@ -10,19 +10,20 @@
 Soit un ensemble de points :
 ![linear regression](/img/machine_learning/LR_0.png)
 
-1. On trace une ligne
+1. On trace une ligne au hazard et on calcul le **résiduel** entre les points et la ligne (résiduel = somme des carrés des distances)
+
+2. On pivote légèrement la ligne, on refait le calcul, et bis repetita
+
+3. En comparant le résultat des différentes lignes, on trouve celle qui correspond au "least square error" la moindre erreur quadratique
 
 
-| 2. Calcul des résiduels<br><br><img src="img/machine_learning/LR_1.png" width="300"/> <br>(résiduels = somme des carrés des distances) | 3. On pivote légèrement la ligne <br><img src="img/machine_learning/LR_2.png" width="300"/> <br> |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-4. On refait les calculs, et bis repetita
-5. On compare le résultat des différentes lignes
-6. Pour trouver celle qui correspond au "least square"
+<img src="img/machine_learning/LR_1.png" width="300"/> <img src="img/machine_learning/LR_2.png" width="300"/>
+
 
 
 La ligne obtenue à 2 paramètres :
-- valeur à l'intersection de l'axe y
-- pente
+- valeur à l'intersection de l'axe y `intercept`
+- pente `slope`
 
 Si la pente est différente de 0, la valeur en x peut aider à prédire la valeur en y
 
