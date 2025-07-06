@@ -1,1 +1,1 @@
-# notes_sur_le_achine_learning
+# notes_sur_le_machine_learning
