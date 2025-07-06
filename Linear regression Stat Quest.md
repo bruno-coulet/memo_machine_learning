@@ -8,10 +8,10 @@
 ## Least-squares
 
 Soit un ensemble de points :
-![linear regression](/img/machine_learning/LR_0.png)
+![linear regression]("/img/machine_learning/LR_0.png")
 
 1. On trace une ligne
-![linear regression](/img/machine_learning/LR_1.png)
+![linear regression]("/img/machine_learning/LR_1.png")
 
 | 2. Calcul des résiduels<br><br><img src="img/machine_learning/linear_regression1.png" width="300"/> <br>(résiduels = somme des carrés des distances) | 3. On pivote légèrement la ligne <br><img src="img/machine_learning/LR_2.png" width="300"/> <br> |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
