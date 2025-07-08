@@ -157,21 +157,16 @@ Au final, toutes les données ont servies à l'entrainement et au test :
 
  Soit 4 tranches de données :
  
- - les 3 premières tranches sont utilisé pour l'entrainement  ![cross_validation_4](cross_validation_train_4.png)
-   
- - la 4ème tranche est réservé aux tests
-![cross_validation_4](cross_validation_test_4.png)
+|||
+|:-:|:-:|
+| les 3 premières tranches sont utilisé pour l'entrainement | ![cross_validation_4](img/machine_learning/cv/cross_validation_train_4.png)|
+| la 4ème tranche est réservé aux tests |![cross_validation_4](img/machine_learning/cv/cross_validation_test_4.png)|
+| on note les résultats |![](img/machine_learning/cv/cross_validation_track_4.png)|
+| puis c'est la 3ème tranche qui est réservée aux tests, on note les résultats| ![](/img/machine_learning/cv/cross_validation_track_3.png)| 
+| puis c'est la 2ème tranche qui est réservée aux tests, on note les résultats| ![](/img/machine_learning/cv/cross_validation_test_2.png)| 
 
-- on note les résultats
-![](cross_validation_track_4.png)
-- puis c'est la 3ème tranche qui est réservée aux tests, on note les résultats
-![](cross_validation_track_3.png)
-- puis c'est la 2ème tranche qui est réservée aux tests, on note les résultats
-![](cross_validation_test_2.png)
-
-- enfin c'est la 1ère tranche qui est réservée aux tests, on note les résultats
-
-Reste à compiler les résultats.
+Enfin c'est la 1ère tranche qui est réservée aux tests, on note les résultats et on les compile :
+![](/img/machine_learning/cv/cross_validation.png)
 Ainsi toutes les données ont servies à l'entrainement et au test
 
 
@@ -180,7 +175,7 @@ Sert à comparer différentes méthodes de Machine Learning :
 - Logistic regression
 - k-nearest neighbors
 - support vector machines
-![comparaison des modèles](img/machine_learning/cross_validation/comparaison.png)
+![comparaison des modèles](img/machine_learning/cv/cross_validation_comparaison.png)
   
 
 ## Confusion Matrix
