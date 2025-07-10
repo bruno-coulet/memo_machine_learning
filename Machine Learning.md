@@ -186,17 +186,14 @@ permet de calculer les métriques **Accuracy, Precision, Sensitivity,Specificity
  ```
 Tableau à n ligne et n colonne pour n paramètres à vérifier
 Permet de déterminer ce que le modèle à prédit correctement (diagonale verte) et incorrectement (faux positifs et faux négatifs en rouge)
-![[img/machine_learning/confusion_matrix/confusion_matrix.png]]
 
-|          |                 |
-| -------- | --------------- |
-| lignes   | classe réelles  |
-| colonnes | classe prédites |
+**lignes** = classe réelles
+**colonnes** = classe prédites
 
 |                 | classe prédite 0                        | classe prédite 1                        |
 | --------------- | --------------------------------------- | --------------------------------------- |
-| classe réelle 0 | <font color = green>vrai négatif</font> | <font color = red>faux positif</font>   |
-| classe réelle 1 | <font color = red>faux négatif</font>   | <font color = green>vrai positif</font> |
+| **classe réelle 0** | <font color = green>vrai négatif</font> | <font color = red>faux positif</font>   |
+| **classe réelle 1** | <font color = red>faux négatif</font>   | <font color = green>vrai positif</font> |
 
 ## Metrique evaluation
 R2, RMSE, MAE, accuracy, F1-score…
