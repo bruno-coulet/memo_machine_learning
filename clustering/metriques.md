@@ -4,19 +4,20 @@ Dans le clustering non supervisé, le choix d'une **métrique de similarité ou 
 
 ## 📐 Distances pour données numériques
 
-| Nom           | Formule                                           | Remarques                          |
-|---------------|---------------------------------------------------|------------------------------------|
-| Euclidienne   | $$  d(x, y) = \sqrt{\sum (x_i - y_i)^2} $$          | Standard, utilisée dans K-Means    |
-| Manhattan     | $$ d(x, y) = \sum $$|$$x_i - y_i$$| $$                   | Moins sensible aux outliers        |
-| Minkowski     |  $$ d(x, y) = \left( \sum |x_i - y_i|^p \right)^{1/p} $$ | Paramètre $$  p $$  variable (1 = Manhattan, 2 = Euclidienne) |
-| Mahalanobis   | Basée sur la matrice de covariance                | Prend en compte les corrélations   |
+| Nom         | Formule                                                                 | Remarques                                                  |
+|--------------|------------------------------------------------------------------------|-------------------------------------------------------------|
+| Euclidienne  | $$ d(x, y) = \sqrt{ \sum (x_i - y_i)^2 } $$                           | Standard, utilisée dans K-Means                             |
+| Manhattan    | $$ d(x, y) = \sum \left\| x_i - y_i \right\| $$                         | Moins sensible aux outliers                                 |
+| Minkowski    | $$ d(x, y) = \left( \sum_{i=1}^n \left\| x_i - y_i \right\|^p \right)^{1/p} $$ | Paramètre $$ p $$ variable (1 = Manhattan, 2 = Euclidienne) |
+| Mahalanobis  | Basée sur la matrice de covariance                                    | Prend en compte les corrélations                            |
+
 
 ## 🧾 Similarité pour données textuelles / binaires
 
 | Nom         | Formule                                               | Utilisation typique                  |
 |-------------|--------------------------------------------------------|--------------------------------------|
 | Cosine      | $  \cos(\theta) = \frac{x \cdot y}{\|x\| \|y\|} $      | Texte, TF-IDF                        |
-| Jaccard     | $  \frac{|A \cap B|}{|A \cup B|} $                     | Données binaires, ensembles          |
+| Jaccard     | $  \frac{\|A \cap B\|}{\|A \cup B\|} $                     | Données binaires, ensembles          |
 | Hamming     | $  \frac{\text{différences}}{n} $                    | Variables binaires ou catégorielles  |
 
 ## 🎯 Choix de la métrique selon le type de données
