@@ -2,6 +2,7 @@ https://www.youtube.com/watch?v=0B5eIE_1vpU
 https://calmcode.io/course/scikit-learn/introduction
 https://github.com/koaning/calm-notebooks
 ## intro
+
 ![](img/machine_learning/scikit_learn.png)
 
 ```python
@@ -116,12 +117,11 @@ transformer = LabelEncoder()
 transformer.fit(X)
 transformer.transform(X)
 ```
-![](transformer.png)
+![](img/machine_learning/transformer/transformer.png)
 
-![](transformer_estimator.png)
-![](transformer_estimator_1.png)
+![](img/machine_learning/transformer/transformer_estimator_train.png)
+![](img/machine_learning/transformer/transformer_estimator_test.png)
 
-![](transformer_estimator_2.png)
 
 
 ### Encodage
@@ -350,7 +350,7 @@ model.score(X_test, y_test)
 2. diviser le dataset en 2 parties
 
 
-![train_test_split](train_test_split.png)
+![train_test_split](img/machine_learning/train_test_split.png)
 
 ```python
 from sklearn.model_selection import train_test_split()

@@ -31,7 +31,7 @@ données ``X`` et ``y`` dans 2 tableau numpy à 2 dimensions :
 - Vecteur`y`        `m` = nb d'échantillons
              `n` = nb de target  (une) présent dans le dataset `m x 1`
     
-![np.arrays](img/scikit_learn/np.arrays.png)
+![dataset](img/machine_learning/dataset.png)
 
 ### Evaluer un modèle
 méthod `.score`
@@ -149,7 +149,7 @@ plt.plot( fpr, tpr, label="modèle choisi")
 ```
 
 
-![ROC](img/machine_learning/ROC_comments.png)
+![ROC](img/machine_learning/logistic_regression/ROC_comments.png)
 modèle aléatoire en bleu
 un modèle parfait monterai le long de l'axe des ordonné jusqu'a y=1, puis longerai l'axe des abscices en restant à y = 1, c'est à dire 0 faux positif, que des vrais positif
 ### AUC
