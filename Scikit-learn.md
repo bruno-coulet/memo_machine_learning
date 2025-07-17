@@ -119,9 +119,9 @@ transformer.transform(X)
 ```
 ![](img/machine_learning/transformer/transformer.png)
 
-![](img/machine_learning/transformer/transformer_estimator_train.png)
-![](img/machine_learning/transformer/transformer_estimator_test.png)
-
+![](img/machine_learning/transformer/transformer_estimator_1.png)
+![](img/machine_learning/transformer/transformer_estimator_2.png)
+![](img/machine_learning/transformer/transformer_estimator_3.png)
 
 
 ### Encodage
@@ -134,7 +134,7 @@ Dans scikitlearn, il existe 5 transformers d'encodage :
 - `OrdinalEncoder()`conçu spécialement pour les variables $X$ 
 
 Associe chaque classe d'une variable à une valeur décimale unique
-![](encodage_ordinale.png)
+![](img/machine_learning/transformer/encodage_ordinale.png)
 
 #### Encodage OneHot
 
@@ -143,14 +143,14 @@ Associe chaque classe d'une variable à une valeur décimale unique
 - `OneHotEncoder()`
 - 
 Chaque classe est représenter en binaire dans une colonne propre
-![](encodage_OneHot.png)
+![](img/machine_learning/transformer/encodage_OneHot.png)
 
 
 
 ### Normalisation
 mettre toutes les données quantitative sur une même echelle
 facilite l'apprentissage des modèles de descente de gradient ou de calculs de distance ou de variance
-![](normalisation.png)
+![](img/machine_learning/transformer/normalisation.png)
 
 
 strandardistation sensible aux valeurs abérantes, cela rend les données difficiles à exploiter
@@ -167,7 +167,7 @@ X = np.array([[70],
 scaler = MinMaxScaler() # ou StandardScaler()
 scaler.fit_transform(X)
 ```
-![](RobustScaler.png)
+![](img/machine_learning/transformer/RobustScaler.png)
 
 
 ### Création de polynômes
@@ -233,14 +233,14 @@ pipeline = chaine de transformation
 - Plus sécuriser (fuite de données, problèmes de transformation)
 - Permet de faire des cross validations avec `GridSearchCV`
 
-![](pipeline.png)
+![](img/machine_learning/transformer/pipeline.png)
 
 1. On développe un/des transformer sur le train set
 2. Cela permet d'entrainer un estimateur
-![](transformer_estimator_train.png)
+![](img/machine_learning/transformer/transformer_estimator_train.png)
 3. On utilise ces mêmes transformer pour traiter les donnée du test set
 4. On peut ensuite fournir ces données traitées à l'estimateur pour faire des prédictions
-![](transformer_estimator_test.png)
+![](img/machine_learning/transformer/transformer_estimator_test.png)
 
 ```python
 from sklearn import make_pipeline
@@ -334,6 +334,7 @@ mod.predict_proba(X)
 | --------- | -------------------- | ---------------------------------- |
 | train set | 80 %                 | $model.fit(X_{train},y_{train})$\| |
 | test set  | 20 %                 | $model.score(X_{test},y_{test})$   |
+
 ![](img/machine_learning/train_test.png)
 
 ```python
@@ -378,7 +379,9 @@ Pour améliorer le modèle, il faut un jeu de validation pour tester les réglag
 
 Le jeu d'entrainement est coupé en tranches, dont une partie sert de jeu de validation :
 Entraine puis valide le modèle sur plusieurs découpe possible du train set 
-![cross validation](cross_validation.png)
+![cross validation](img/machine_learning/cv/cross_validation.png)
+
+
 
 ```python
 from sklearn.model_selection import cross_val_score
@@ -392,7 +395,7 @@ cross_val_score(KNeighborsClassifier(), X_train, y_train, cv=5, scoring="accurac
 
 | Training, Validation, Test                |
 | ----------------------------------------- |
-| ![train_val_test set](train_val_test.png) |
+| ![train_val_test set](img/machine_learning/train_val_test.png) |
 
 ### `validation_curve`
 fait varier un hyperparamètre
@@ -407,7 +410,8 @@ détecte l'underfitting → les deux scores sont bas
 | hyperparamèttre qu'on veut régler                  | `n-neighbors`      |
 | un itérateur pour les valeurs que l'on veut tester | `k` = 1 ... 49     |
 | nombre de découpe dans le cross validation         | `cv=5`             |
-![](validation_curve.png)
+
+![](img/machine_learning/validation_curve.png)
 ```python
 from sklearn.model_selection import validation_curve
 
@@ -438,7 +442,7 @@ param_grid = dictionnaire { } avec :
 - les hyperparamètres à régler
 - les différentes valeurs à tester de chaque hyperparamètre
 - 
-![](grid_search_cv.png)
+![](img/machine_learning/grid_search_cv.png)
 
 ```python
 grid = grid_search_cv (
@@ -489,7 +493,7 @@ plt.xlabel('train_sizes')
 plt.legend()
 ```
 
-![](learning_curve.png)
+![](img/machine_learning/learning_curve.png)
 
 ## Test
 Pour avoir une idée des performances du modèle sur de nouvelle données, il faut l'essayer sur les données du test set
