@@ -1,17 +1,24 @@
-<img src="../img/machine_learning/acp/1_average_data_value.png" width="300">
-<img src="../img/machine_learning/acp/2_data_centered.png" width="300">
-<img src="../img/machine_learning/acp/3_search_best_line.png" width="300">
-<img src="../img/machine_learning/acp/5_minimize_b.png" width="300">
-<img src="../img/machine_learning/acp/6_maximize_c.png" width="300">
-<img src="../img/machine_learning/acp/09_best_line_math.png" width="300">
-<img src="../img/machine_learning/acp/10_best_line_slope.png" width="300">
-<img src="../img/machine_learning/acp/11_slope_ratio.png" width="300">
-<img src="../img/machine_learning/acp/12_slope_to_1.png" width="300">
-<img src="../img/machine_learning/acp/14_PC1_scores.png" width="300">
-<img src="../img/machine_learning/acp/15_PC2.png" width="300">
-<img src="../img/machine_learning/acp/16_PC2_scores.png" width="300">
-<img src="../img/machine_learning/acp/17_PC1_horizontal.png" width="300">
-<img src="../img/machine_learning/acp/18_PC_graph.png" width="300">
-<img src="../img/machine_learning/acp/19_PC_graph_math.png" width="300">
-<img src="../img/machine_learning/acp/20_variation.png" width="300">
-<img src="../img/machine_learning/acp/20_end.png" width="300">
+<img src="../img/machine_learning/acp/1_average_data_value.png" width="300"><br>
+<img src="../img/machine_learning/acp/2_data_centered.png" width="300"><br>
+<img src="../img/machine_learning/acp/3_search_best_line.png" width="300"><br>
+Etant donner que **a** est fixe<br>
+Pour trouver la ligne qui s'ajuste le mieux, on peut chercher à :
+- minimiser **b**
+<img src="../img/machine_learning/acp/5_minimize_b.png" width="300"><br>
+- maximiser **c**
+
+<img src="../img/machine_learning/acp/6_maximize_c.png" width="300"><br>
+La ligne qui s'ajuste le mieux avec les données...<br>
+<img src="../img/machine_learning/acp/09_best_line_math.png" width="300"><br>
+Est la ligne PC1<br>
+<img src="../img/machine_learning/acp/10_best_line_slope.png" width="300"><br>
+<img src="../img/machine_learning/acp/11_slope_ratio.png" width="300"><br>
+<img src="../img/machine_learning/acp/12_slope_to_1.png" width="300"><br>
+<img src="../img/machine_learning/acp/14_PC1_scores.png" width="300"><br>
+<img src="../img/machine_learning/acp/15_PC2.png" width="300"><br>
+<img src="../img/machine_learning/acp/16_PC2_scores.png" width="300"><br>
+<img src="../img/machine_learning/acp/17_PC1_horizontal.png" width="300"><br>
+<img src="../img/machine_learning/acp/18_PC_graph.png" width="300"><br>
+<img src="../img/machine_learning/acp/19_PC_graph_math.png" width="300"><br>
+<img src="../img/machine_learning/acp/20_variation.png" width="300"><br>
+<img src="../img/machine_learning/acp/20_end.png" width="300"><br>
