@@ -1,4 +1,4 @@
-Calcul de la moyenne des valeurs pour chaque variable (dimension) du jeu de données.
+**Calcul de la moyenne des valeurs pour chaque variables** (dimensions) du jeu de données<br>
 <img src="../img/machine_learning/acp/1_average_data_value.png" width="300"><br>
 Centrage des données : on soustrait la moyenne à chaque valeur, ce qui revient à recentrer les données autour de l'origine
 <img src="../img/machine_learning/acp/2_data_centered.png" width="300"><br>
