@@ -18,12 +18,14 @@ soit maximiser **c** (la variance projetée sur la droite)
 La ligne qui s'ajuste le mieux avec les données est celle qui maximise le total du carré des distances projection/origine
 
 La direction optimale est celle qui maximise la variance projetée (ou, équivalemment, qui minimise la somme des carrés des distances entre les points et leur projection).<br>
-<img src="../img/machine_learning/acp/09_best_line_math.png" width="300"><br>
+<img src="../img/machine_learning/acp/7_best_line_math.png" width="300"><br>
 La direction (ou droite) qui capte le plus de variance possible dans les données est la **première composante principale** (PC1)
 Sa pente permet de calculer... 
+<img src="../img/machine_learning/acp/8_best_line_slope.png" width="300"><br>
 <p align="left">
-<img src="../img/machine_learning/acp/10_best_line_slope.png" width="300" style="vertical-align: top;">
-<img src="../img/machine_learning/acp/11_slope_ratio.png" width="300" style="vertical-align: top;">
+<img src="../img/machine_learning/acp/9_slope_ratio.png" width="300" style="vertical-align: top;">
+<img src="../img/machine_learning/acp/10_slope_math.png" width="300" style="vertical-align: top;">
+<img src="../img/machine_learning/acp/12_slope_to_one.png" width="300" style="vertical-align: top;">
 </p>
 ...les scores projetés (nouvelles coordonnées) de chaque individu sur cette composante
 <p align="left">
