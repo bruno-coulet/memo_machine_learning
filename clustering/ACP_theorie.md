@@ -25,7 +25,6 @@ Sa pente permet de calculer...
 <p align="left">
 <img src="../img/machine_learning/acp/9_slope_ratio.png" width="300" style="vertical-align: top;">
 <img src="../img/machine_learning/acp/10_slope_math.png" width="300" style="vertical-align: top;">
-<img src="../img/machine_learning/acp/12_slope_to_one.png" width="300" style="vertical-align: top;">
 </p>
 ...les scores projetés (nouvelles coordonnées) de chaque individu sur cette composante
 <p align="left">
