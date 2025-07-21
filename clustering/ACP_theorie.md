@@ -45,7 +45,6 @@ Il s’agit du rapport entre la variance projetée sur PC1 et la variance totale
 
 Cela permet de mesurer l’importance de cette composante dans la représentation des données.
 <img src="../img/machine_learning/acp/19_PC_graph_math.png" width="300"><br>
-Variation for PC1 = 15
+Variation for PC1 = 15<br>
 Variation for PC1 = 3
-<img src="../img/machine_learning/acp/20_variation.png" width="300"><br>
 <img src="../img/machine_learning/acp/20_end.png" width="300"><br>
