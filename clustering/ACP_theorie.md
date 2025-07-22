@@ -4,7 +4,7 @@
 **Centrage des données**
 soustrait la moyenne à chaque valeur, ce qui revient à recentrer les données autour de l'origine
 <img src="../img/machine_learning/acp/2_data_centered.png" width="300"><br>
-Recherche de la direction (droite ou vecteur) qui s’ajuste le mieux aux données pour y projeter les points.
+Recherche de la direction (droite ou vecteur) qui s’ajuste le mieux aux données pour y projeter les points<br>
 <img src="../img/machine_learning/acp/3_search_best_line.png" width="300"><br>
 Étant donné que **a** (distance de la projection à l'origine) est fixe, on peut :
 - soit **minimiser b** la distance entre les points et leur projection sur la droite<br>
@@ -21,13 +21,13 @@ La direction (ou droite) qui capte le plus de variance possible dans les donnée
 <img src="../img/machine_learning/acp/8_best_line_slope.png" width="300"><br>
 Sa pente permet de calculer... 
 <p align="left">
-<img src="../img/machine_learning/acp/9_slope_ratio.png" width="300" style="vertical-align: top;">
-<img src="../img/machine_learning/acp/10_slope_math.png" width="300" style="vertical-align: top;">
+<img src="../img/machine_learning/acp/9_slope_ratio.png" width="300" height="200" style="vertical-align: top;">
+<img src="../img/machine_learning/acp/10_slope_math.png" width="300" height="200" style="vertical-align: top;">
 </p>
 ...les scores projetés (nouvelles coordonnées) de chaque individu sur cette composante
 <p align="left">
   <img src="../img/machine_learning/acp/12_slope_to_1.png" width="300" style="vertical-align: top;">
-  <img src="../img/machine_learning/acp/14_PC1_scores.png" width="300" style="vertical-align: top;">
+  <img src="../img/machine_learning/acp/14_PC1_scores.png" width="300" style="vertical-align: center;">
 </p>
 Idem avec la pente de PC2
 <p align="left">
