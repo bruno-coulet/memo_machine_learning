@@ -37,11 +37,9 @@ Idem avec la pente de PC2
 On pivote l'ensemble pour avoir PC1 à l'horizontal<br>
 <img src="../img/machine_learning/acp/18_PC_graph.png" width="300"><br>
 
-<img src="../img/machine_learning/acp/17_PC1_horizontal.png" width="300"><br>
-
 Pourcentage de variance expliquée par PC1 :
-Il s’agit du rapport entre la variance projetée sur PC1 et la variance totale des données.
-
+Il s’agit du rapport entre la variance projetée sur PC1 et la variance totale des données<br>
+<img src="../img/machine_learning/acp/17_PC1_horizontal.png" width="300"><br>
 Cela permet de mesurer l’importance de cette composante dans la représentation des données.
 
 Variation sur PC1 = 15<br>
