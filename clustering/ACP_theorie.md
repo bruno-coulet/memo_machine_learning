@@ -1,3 +1,23 @@
+ ### ACP
+ L'Analyse en Composantes Principales permet de :
+ - visualiser des données multidimensionnelles en 2 ou 3 dimensions
+ - Décorréler les variables (génére de nouvelles variables non corrélées)
+ - Débruiter les données
+ - Effectuer une réduction de dimension (évite le surapprentissage)
+
+ - trouver la projection qui offre la meilleur représentation des données
+
+Les donnée utilisent rarement équitabelemnt l'ensemble des dimensions.
+Cela permet de négliger certaines dimensions
+
+1. normaliser ou standardiser les données
+
+2. Identifier l'axe selon lequel la variances des données est maximale
+
+3. axe dans la direction de la variance max parmis les direction restante, prependiculairement au premier axe
+
+4. bis repetita, au maximum :un axe par variable
+
 **Calcul de la moyenne des valeurs pour chaque variables** (dimensions) du jeu de données
 <br>
 <img src="../img/machine_learning/acp/1_average_data_value.png" width="300"><br>
@@ -51,3 +71,16 @@ Variation sur PC2   3 / 18 = 0,17 = 17 %
 <img src="../img/machine_learning/acp/19_PC_graph_math.png" width="800"><br>
 Le **scree plot** est une représentation graphique des % de variation contenus par chaque PC
 <img src="../img/machine_learning/acp/20_end.png" width="800"><br>
+
+
+### Cercle de corrélation
+
+o
+mment les axes initiaux (les variables du dataset) sont-ils placés par rapport aux nouveaux axes (les Composantes Principales)
+
+Cercle de rayon 1<br>
+<img src="../img/machine_learning/acp/cercle_correlation.png" width="800"><br>
+Les variables initiales sont réprésentées sous forme de flèches de longueur entre 0 et 1
+Les projections de la fleche sur la composante principale correspond au coefficient de corrélation entre la variable et les CP<br>
+<img src="../img/machine_learning/acp/cercle_correlation_2.png" width="800"><br>
+
