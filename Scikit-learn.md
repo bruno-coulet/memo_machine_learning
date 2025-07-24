@@ -10,6 +10,28 @@ https://github.com/koaning/calm-notebooks
 %pip install --upgrade scikit-learn==0.23.0
 ```
 
+**Estimateur**
+Classe ou objet qui implémente les méthodes `fit()`<br> et souvent `predict()`, `transform()`
+Un modèle "vide", prêt à apprendre à partir des données d'entraînement
+
+```python
+LinearRegression()
+RandomForestClassifier()
+KMeans()
+```
+
+**Model**
+Instance de l’estimateur qui a été entraînée, qui a appris à partir des données, contient les paramètres appris
+`fit()` a été appelé
+
+```python
+model = LinearRegression()
+model.fit(X_train, y_train)  # → le modèle est entraîné ici
+```
+
+
+
+
 ## Schéma de base
 data -> model -> prédiction
 
