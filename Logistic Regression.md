@@ -27,8 +27,8 @@ une probabilité de 0,75 correspond à des odds de 3 (car 0,75/0,25=3)
 On **transforme l'axe y** de **probabilité de  0 à 1** en **log(odds)** : $$\log\left(\frac{p}{1 - p}\right)$$
 (forme classique du _logit_ en statistiques)
 
-![](../memo_maths/img/Log10.svg)
 
+<img src="../memo_maths/img/Log10.svg" width=400>
 
 
 <!-- <table>
