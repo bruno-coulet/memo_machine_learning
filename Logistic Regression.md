@@ -54,7 +54,13 @@ Les **odds** sont asymétriques
 <img src="img/machine_learning/logistic_regression/asymetry.png" width=400>
 
 #### Solution
-On **transforme l'axe y** de **probabilité de  0 à 1** en **log(odds)**, forme classique du _logit_ en statistiques : $$\text{logit(p)}=\log\left( \frac{p}{1 - p} \right)$$
+On **transforme l'axe y** de **probabilité de  0 à 1** en **log(odds)** : 
+
+|forme classique du _logit_ en statistiques|
+|-|
+|$$\text{logit(p)}=\log\left( \frac{p}{1 - p} \right)$$|
+|logarithme naturel = logarithme népérien|
+|c’est-à-dire en base e (avec $e≈2.718$)|
 
 
 Cela revient à centrer sur 0 et normaliser:
