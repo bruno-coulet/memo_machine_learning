@@ -38,13 +38,13 @@ Les **odds** sont asymétriques
 
 |odds|| | |plage|
 |-|-|-|-|-|
-|très favorable|<img src="img/machine_learning/logistic_regression/odd_very_high.png" width=150>|32/3|10.7|entre 1 et $+\infty$|
-|favorable|<img src="img/machine_learning/logistic_regression/odd_high.png" width=120>|8/3|2.66| |
+|très favorable|<img src="img/machine_learning/logistic_regression/odds_very_high.png" width=150>|32/3|10.7|entre 1 et $+\infty$|
+|favorable|<img src="img/machine_learning/logistic_regression/odds_high.png" width=120>|8/3|2.66| |
 
 ||| | ||
 |-|-|-|-|-|
-|défavorable|<img src="img/machine_learning/logistic_regression/odd_low.png" width=70>|1/4|0.25|entre 1 et 0|
-|très défavorable|<img src="img/machine_learning/logistic_regression/odd_very_low.png" width=150>|1/32|0.031||
+|défavorable|<img src="img/machine_learning/logistic_regression/odds_low.png" width=70>|1/4|0.25|entre 1 et 0|
+|très défavorable|<img src="img/machine_learning/logistic_regression/odds_very_low.png" width=150>|1/32|0.031||
 
 
 À valeur de probabilité égale mais opposée, la valeur des petits odds est compressée comparée aux grands odds :
@@ -88,9 +88,9 @@ Cela revient à centrer sur 0 et normaliser:
 
 
 Pour faire simple :
-$log(\frac{1}{0}​)=log(1)−log(0)$
+$log(\frac{1}{0^+}​)=log(1)−log(0)$
 
-$\log\left(\frac{1}{0}\right) = 0 - (-\infty) = +\infty$  
+$\log\left(\frac{1}{0^+}\right) = 0 - (-\infty) = +\infty$  
 
 ou plus exactement :  
 $$\lim_{x \to 0^+} \log\left(\frac{1}{x}\right) = +\infty$$
