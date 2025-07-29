@@ -35,16 +35,16 @@ matrice $m * n$  (m lignes, n colonnes)
 | erreur                                       | valeur prédite - prédiction (ou l'inverse ) au carré ( ou en valer absolue | $(f_{(x^i)} - y_i)^2$<br><br> ou<br><br> $(y_i - f_{(x^i)})^2$<br>     | $(y_i - \hat{y})^2$<br><br>ou <br><br>$(\hat{y} - y_i)^2$ |
 | $J(a,b)$                                     | fonction coût paramètre a et b                                             | somme (de $i$ à $m$) de toutes les $(erreurs)^2$/ nombre d'observation | $$\frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y})^2$$          |
 
-![dataset](img/machine_learning/dataset.png)
+![dataset](img/dataset.png)
 
 La data est coupée en 2  datasets Y et y :
 - $X$ : variables explicatives (features) utilisées pour faire les prédictions ($m \times n$)
 - $y$ : variable cible (target) que l'on veut prédire ( $m \times 1$)
-![](img/machine_learning/X_y.png)
+![](img/X_y.png)
 
 
 ## Intro
-![Pipeline](img/machine_learning/linear_regression_pipeline.png)
+![Pipeline](img/linear_regression_pipeline.png)
 On choisi le modèle
 la machine apprend/choisi les paramètres
 
@@ -96,7 +96,7 @@ depuis $x = 1$
 jusqu'a $x = m$ 
 
 
-![dataset](img/machine_learning/equations.png)
+![dataset](img/equations.png)
 
 
 ## Fonction de coût J(θ)
@@ -159,14 +159,14 @@ Au final, toutes les données ont servies à l'entrainement et au test :
  
 |||
 |:-:|:-:|
-| les 3 premières tranches sont utilisé pour l'entrainement | ![cross_validation_4](img/machine_learning/cv/cross_validation_train_4.png)|
-| la 4ème tranche est réservé aux tests |![cross_validation_4](img/machine_learning/cv/cross_validation_test_4.png)|
-| on note les résultats |![](img/machine_learning/cv/cross_validation_track_4.png)|
-| puis c'est la 3ème tranche qui est réservée aux tests, on note les résultats| ![](/img/machine_learning/cv/cross_validation_track_3.png)| 
-| puis c'est la 2ème tranche qui est réservée aux tests, on note les résultats| ![](/img/machine_learning/cv/cross_validation_test_2.png)| 
+| les 3 premières tranches sont utilisé pour l'entrainement | ![cross_validation_4](img/cv/cross_validation_train_4.png)|
+| la 4ème tranche est réservé aux tests |![cross_validation_4](img/cv/cross_validation_test_4.png)|
+| on note les résultats |![](img/cv/cross_validation_track_4.png)|
+| puis c'est la 3ème tranche qui est réservée aux tests, on note les résultats| ![](/img/cv/cross_validation_track_3.png)| 
+| puis c'est la 2ème tranche qui est réservée aux tests, on note les résultats| ![](/img/cv/cross_validation_test_2.png)| 
 
 Enfin c'est la 1ère tranche qui est réservée aux tests, on note les résultats et on les compile :
-![](/img/machine_learning/cv/cross_validation.png)
+![](/img/cv/cross_validation.png)
 Ainsi toutes les données ont servies à l'entrainement et au test
 
 
@@ -175,7 +175,7 @@ Sert à comparer différentes méthodes de Machine Learning :
 - Logistic regression
 - k-nearest neighbors
 - support vector machines
-![comparaison des modèles](img/machine_learning/cv/cross_validation_comparaison.png)
+![comparaison des modèles](img/cv/cross_validation_comparaison.png)
   
 
 ## Confusion Matrix
@@ -237,13 +237,13 @@ specificity = tn / (tn + fp)
 ```
 
 
-![sensitivity2](img/machine_learning/confusion_matrix/sensitivity.png)
+![sensitivity2](img/confusion_matrix/sensitivity.png)
 
 
 
 
 =   Vrais négatifs / (vrais négatifs + faux positifs)
-![specificity.png](img/machine_learning/confusion_matrix/specificity.png)
+![specificity.png](img/confusion_matrix/specificity.png)
 
 
 ## ROC
@@ -252,11 +252,11 @@ Aide à choisir le meilleur seuil pour catégoriser les données
 
 Essayons de savoir si une souris est obèse (1) ou pas (0) en sachant son poids
 
-![](img/machine_learning/logistic_regression/curve.png)
+![](img/logistic_regression/curve.png)
 
 Les souris rouges ne sont pas obèses (0)
 Les souris bleues sont  obèses (1)
-![](img/machine_learning/logistic_regression/mice.png)
+![](img/logistic_regression/mice.png)
 
 Avec un seuil à 0,5
 
@@ -265,17 +265,17 @@ Avec un seuil à 0,5
 | souris obèse     | >= 0,5 |
 | souris pas obèse | <= 0,5 |
 
-![](img/machine_learning/logistic_regression/log_reg_04.png)
+![](img/logistic_regression/log_reg_04.png)
 
 **Comparaison des différent seuils**
 Specificity = Vrais négatifs / (vrais négatifs + faux positifs)
 Sensitivity =   Vrais positifs / (vrais positifs + faux négatifs)
 
-![Comparaison des différent seuils](img/machine_learning/ROC.png)
+![Comparaison des différent seuils](img/ROC.png)
 
 
 
 ## AUC
 Area Under The Curve (ROC cuve)
-![](img/machine_learning/AUC.png)
+![](img/AUC.png)
 

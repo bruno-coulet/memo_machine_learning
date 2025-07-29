@@ -28,7 +28,7 @@ ne garder que les variables les plus utiles aux modele
 **Extraction**
 génère de nouvelles variables à partir des info cachées dans le dataset
 
-![](img/machine_learning/preprocessing/preprocessing.png)
+![](img/preprocessing/preprocessing.png)
 
 
 module `sklearn.preprocessing`

@@ -29,7 +29,7 @@ transformer.fit_transform(X)
 - `pattern`   (avec des regex)
 
 ### Tri des variables catégorielles et numériques
-![](img/machine_learning/preprocessing/pipelines.png)
+![](img/preprocessing/pipelines.png)
 ```python
 X = ...toutes les colonnes sauf la target
 y = ...la target
@@ -63,9 +63,9 @@ model.fit(X,y)
 
 ### `make_union`
 met en parallèle plusieurs transformers et concatène le résultat
-![](img/machine_learning/preprocessing/make_union1.png)
+![](img/preprocessing/make_union1.png)
 ```python
 pipeline_en_parallele = (make_union(StandarScaler(), Binarizer())
 pipeline_en_parallele (numerical_feature)
 ```
-![](img/machine_learning/preprocessing/make_union2.png)
+![](img/preprocessing/make_union2.png)

@@ -52,11 +52,11 @@ Sert à comparer différentes méthodes de Machine Learning :
 - Logistic regression
 - k-nearest neighbors
 - support vector machines
-![comparaison des modèles](img/machine_learning/cross_validation_comparaison.png)
+![comparaison des modèles](img/cross_validation_comparaison.png)
   
 
 ## Confusion Matrix
-tableau à n ligne et n colonne pour n paramètres à vérifier![confusion matrix](img/machine_learning/confusion_matrix_4_items.png)
+tableau à n ligne et n colonne pour n paramètres à vérifier![confusion matrix](img/confusion_matrix_4_items.png)
 Permet de déterminé ce que le modèle à prédit correctement (diagonale verte) et incorrectement (faux positifs et faux négatifs en rouge)
 ![[actual_predicted.png]]
 
@@ -65,18 +65,18 @@ Recall ou Sensitivity
 (% of actual positive correctly predicted)
 =   Vrais positifs / (vrais positifs + faux négatifs)
 
-![sensitivity](img/machine_learning/sensitivity.png)
+![sensitivity](img/sensitivity.png)
 
-![sensitivity2](img/machine_learning/sensitivity2.png)
+![sensitivity2](img/sensitivity2.png)
 ## Specificity
 Specificity
 % of actual negative correctly predicted
 
 =   Vrais négatifs / (vrais négatifs + faux positifs)
 
-![specificity.png](img/machine_learning/specificity.png)
+![specificity.png](img/specificity.png)
 
-![specificity2.png](img/machine_learning/specificity2.png)
+![specificity2.png](img/specificity2.png)
 ## Precision
 % of predicted positives correctly predicted
 
@@ -89,12 +89,12 @@ Aide à choisir le meilleur seuil pour catégoriser les données
 
 Essayons de savoir si une souris est obèse (1) ou pas (0) en sachant son poids
 
-![](img/machine_learning/curve.png)
+![](img/curve.png)
 
 Les souris rouges ne sont pas obèses (0)
 Les souris bleues sont  obèses (1)
 
-![](img/machine_learning/mice.png)
+![](img/mice.png)
 
 Avec un seuil à 0,5
 
@@ -103,16 +103,16 @@ Avec un seuil à 0,5
 | souris obèse     | >= 0,5 |
 | souris pas obèse | <= 0,5 |
 
-![](img/machine_learning/threshold_2.png)
+![](img/threshold_2.png)
 
 **Comparaison des différent seuils**
 Specificity = Vrais négatifs / (vrais négatifs + faux positifs)
 Sensitivity =   Vrais positifs / (vrais positifs + faux négatifs)
-![Comparaison des différent seuils](img/machine_learning/ROC.png)
+![Comparaison des différent seuils](img/ROC.png)
 
 
 
 ## AUC
 Area Under The Curve (ROC cuve)
-![](img/machine_learning/AUC.png)
+![](img/AUC.png)
 

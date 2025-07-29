@@ -28,7 +28,7 @@ imputer.fit_transform(X_train)
 imputer.transform(X_test)
 ```
 
-![Remplace la valeur manquante par la moyenne](img/machine_learning/imputer/mean.png)
+![Remplace la valeur manquante par la moyenne](img/imputer/mean.png)
 ### `KNNImputer`
 Remplace les valeurs manquantes d'un échantillon par les valeurs des échantillons qui lui ressemble le plus.
 
@@ -39,18 +39,18 @@ imputer = KNNImputer(n_nrighbors=1)
 imputer.fit_transform(X)
 ```
 
-![](img/machine_learning/imputer/KNNImputer.png)
+![](img/imputer/KNNImputer.png)
 ### `iterativeimputer`
 
 
 ### `missingIndicator`
 Variable booléenne qui indique l'absence de valeurs dans le dataset
 
-![](img/machine_learning/imputer/missingIndicator.png)
+![](img/imputer/missingIndicator.png)
 par exemple dans le titanic, si il n'y a pas d'info sur la classe, l'age, la cabine, etc... c'est peut être qu'il s'agit d'un membre d'équipage :
 Le manque d'information peut être une information
 
-![](img/machine_learning/imputer/missingIndicator2.png)
+![](img/imputer/missingIndicator2.png)
 
 ```python
 pipeline = make_union(SimpleImputer(strategy='constant',fill_value=-99),
