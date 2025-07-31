@@ -35,16 +35,19 @@ matrice $m * n$  (m lignes, n colonnes)
 | erreur                                       | valeur prédite - prédiction (ou l'inverse ) au carré ( ou en valer absolue | $(f_{(x^i)} - y_i)^2$<br><br> ou<br><br> $(y_i - f_{(x^i)})^2$<br>     | $(y_i - \hat{y})^2$<br><br>ou <br><br>$(\hat{y} - y_i)^2$ |
 | $J(a,b)$                                     | fonction coût paramètre a et b                                             | somme (de $i$ à $m$) de toutes les $(erreurs)^2$/ nombre d'observation | $$\frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y})^2$$          |
 
-![dataset](img/dataset.png)
-
+<img src="img/dataset.png" width=400>
+<br>
 La data est coupée en 2  datasets Y et y :
+
 - $X$ : variables explicatives (features) utilisées pour faire les prédictions ($m \times n$)
+
 - $y$ : variable cible (target) que l'on veut prédire ( $m \times 1$)
-![](img/X_y.png)
+
+<img src="img/X_y.png" width=300>
 
 
 ## Intro
-![Pipeline](img/linear_regression_pipeline.png)
+<img src="img/linear_regression_pipeline.png" width=800>
 On choisi le modèle
 la machine apprend/choisi les paramètres
 
@@ -96,7 +99,7 @@ depuis $x = 1$
 jusqu'a $x = m$ 
 
 
-![dataset](img/equations.png)
+<img src="img/equations.png" width=600>
 
 
 ## Fonction de coût J(θ)
@@ -128,7 +131,8 @@ Utilise Testing Data pour évaluer les modèle de Machine Learning.
 
 L'important n'est pas comment un modèle colle au Training data mais de savoir si les prédictions sont justes.
 
-![Testing data](testing-data.png)
+
+<img src="img/testing-data.png" width=400>
 
 
 ## Descente de gradient
@@ -175,7 +179,7 @@ Sert à comparer différentes méthodes de Machine Learning :
 - Logistic regression
 - k-nearest neighbors
 - support vector machines
-![comparaison des modèles](img/cv/cross_validation_comparaison.png)
+<img src="img/cv/cross_validation_comparaison.png" width=400>
   
 
 ## Confusion Matrix
@@ -237,14 +241,13 @@ specificity = tn / (tn + fp)
 ```
 
 
-![sensitivity2](img/confusion_matrix/sensitivity.png)
+<img src="img/confusion_matrix/sensitivity.png" width=500>
 
+**Sensitivity =**  Vrais positifs / (vrais positifsn + faux négatifs)
 
+<img src="img/confusion_matrix/specificity.png" width=500>
 
-
-=   Vrais négatifs / (vrais négatifs + faux positifs)
-![specificity.png](img/confusion_matrix/specificity.png)
-
+**Specificity =**  Vrais négatifs / (vrais négatifs + faux positifs)
 
 ## ROC
 **Receivor Operator Characteristic**
@@ -252,11 +255,11 @@ Aide à choisir le meilleur seuil pour catégoriser les données
 
 Essayons de savoir si une souris est obèse (1) ou pas (0) en sachant son poids
 
-![](img/logistic_regression/curve.png)
+<img src="img/logistic_regression/curve.png" width=400>
 
 Les souris rouges ne sont pas obèses (0)
 Les souris bleues sont  obèses (1)
-![](img/logistic_regression/mice.png)
+<img src="img/logistic_regression/mice.png" width=400>
 
 Avec un seuil à 0,5
 
@@ -265,17 +268,18 @@ Avec un seuil à 0,5
 | souris obèse     | >= 0,5 |
 | souris pas obèse | <= 0,5 |
 
-![](img/logistic_regression/log_reg_04.png)
+<img src="img/logistic_regression/log_reg_04.png" width=400>
 
 **Comparaison des différent seuils**
 Specificity = Vrais négatifs / (vrais négatifs + faux positifs)
 Sensitivity =   Vrais positifs / (vrais positifs + faux négatifs)
 
-![Comparaison des différent seuils](img/ROC.png)
+Comparaison des différent seuils
+<img src="img/logistic_regression/ROC.png" width=400>
 
 
 
 ## AUC
 Area Under The Curve (ROC cuve)
-![](img/AUC.png)
+<img src="img/logistic_regression/AUC.png" width=400>
 
