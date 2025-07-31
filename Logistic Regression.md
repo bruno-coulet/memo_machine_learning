@@ -56,11 +56,14 @@ Les **odds** sont asymétriques
 #### Solution
 On **transforme l'axe y** de **probabilité de  0 à 1** en **log(odds)** : 
 
-|forme classique du _logit_ en statistiques|
-|-|
-|$$\text{logit(p)}=\log\left( \frac{p}{1 - p} \right)$$|
-|logarithme naturel = logarithme népérien|
-|c’est-à-dire en base e (avec $e≈2.718$)|
+|logit (forme classique statistiques)|fonction sigmoïde (inverse)|
+|-|-|
+|transforme une sismoïde en droite|transforme une droite en sigmoïde|
+|étire l'axe y de 0 à 1 vers ($-\infty$, $+\infty$)|restreint l'axe y à l'intervalle [0, 1]|
+||prend une valeur réelle et retourne une probabilité|
+|$$\text{logit(p)}=\log\left( \frac{p}{1 - p} \right)$$|$$\text{p}=\frac{e^\text{log(odds)}}{1 + e^\text{log(odds)}}=\frac{1}{1+e^{-z}}$$|
+|logarithme naturel = logarithme népérien|c’est-à-dire en base e (avec $e≈2.718$)|
+
 
 
 Cela revient à centrer sur 0 et normaliser:
