@@ -3,62 +3,115 @@
 [Machine learnia github](https://github.com/MachineLearnia/Python-Machine-Learning)
 [StatQuest](https://www.youtube.com/watch?v=Gv9_4yMHFhI&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=1&t=46s)
 
+## Conventions
+
+matrice $m * n$<br>
+- $m$ lignes (observations)
+- $n$ colonnes (variables ou features)
+
+| symbole  |signification | |   |
+| - | -- | - | - |
+| $y$ | target| | |
+| $x_1$  $x_2$  $x_3$ ... | features ou variables || |
+| $m$ | nombre d'observations | |  |
+| $n$  | nombre de features ou    variables  |  |             |
+| $x_3^{(2)}$<br><br>$x_{feature}^{(exemple)}$ | 3ème feature de l'observation 2 | | |
+| erreur  | écart entre valeur réelle et prédiction | $(f_{(x^i)} - y_i)^2$<br><br> ou<br><br> $(y_i - f_{(x^i)})^2$<br>     | $(y_i - \hat{y})^2$<br><br>ou <br><br>$(\hat{y} - y_i)^2$ |
+| $J(a,b)$                                     | fonction coût<br>paramètre a et b                                             | somme (de $i$ à $m$) de toutes les $(erreurs)^2$/ nombre d'observation | $$\frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y})^2$$          |
+
+L’**erreur** peut être exprimée au carré ou en valeur absolue, selon le contexte (MSE, MAE, ...)
+
+## Intro
 1. Dataset
 2. modele
 3. fonction de coût
-4. algotithme de minimisation, **descente de gradient**
+4. algorithme de minimisation, **descente de gradient**
 
-| dataset | variable cible (target) :<br>matrice $m * n$  (m lignes, 1 colonnes)<br>$$ y \in \mathbb{R}^{m \times 1} \quad $$variables explicatives (features) :<br>matrice $m * n$  (m lignes, n colonnes)<br>$$ \quad X \in \mathbb{R}^{m \times n}$$ |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| $m$     | nombre d'observations (lignes du dataset)                                                                                                                                                                                                   |
-| $n$     | nombre de variables (colonnes de $X$)                                                                                                                                                                                                       |
-| $y$     | vecteur des cibles $m \times 1$                                                                                                                                                                                                             |
-| $X$     | matrice des variables explicatives $m \times n$                                                                                                                                                                                             |
-
-| modele<br>*linéaire par exemple* | $$f_{(x)} = ax + b$$                           |
-| -------------------------------- | ---------------------------------------------- |
-| **fonction de coût**             | $$\frac{1}{2m} \sum_{i=1}^{m} (a.x + b -y)^2$$ |
-| **algotithme de minimisation**   | **descente de gradient**                       |
-
-
-## Conventions
-
-matrice $m * n$  (m lignes, n colonnes)
-
-| symbole                                      | signification                                                              |                                                                        |                                                           |
-| -------------------------------------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------- |
-| $y$                                          | target                                                                     |                                                                        |                                                           |
-| $x_1$  $x_2$  $x_3$ ...                      | features                                                                   |                                                                        |                                                           |
-| $m$                                          | nombre d'observations du dataset                                           |                                                                        |                                                           |
-| $n$                                          | nombre de features                                                         |                                                                        |                                                           |
-| $x_3^{(2)}$<br><br>$x_{feature}^{(exemple)}$ | 3ème feature de l'observation 2                                            |                                                                        |                                                           |
-| erreur                                       | valeur prédite - prédiction (ou l'inverse ) au carré ( ou en valer absolue | $(f_{(x^i)} - y_i)^2$<br><br> ou<br><br> $(y_i - f_{(x^i)})^2$<br>     | $(y_i - \hat{y})^2$<br><br>ou <br><br>$(\hat{y} - y_i)^2$ |
-| $J(a,b)$                                     | fonction coût paramètre a et b                                             | somme (de $i$ à $m$) de toutes les $(erreurs)^2$/ nombre d'observation | $$\frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y})^2$$          |
-
+## dataset
 <img src="img/dataset.png" width=400>
 <br>
-La data est coupée en 2  datasets Y et y :
+La data est coupée en 2 ensembles Y et y :
 
 - $X$ : variables explicatives (features) utilisées pour faire les prédictions ($m \times n$)
 
 - $y$ : variable cible (target) que l'on veut prédire ( $m \times 1$)
 
+### Dimensions des données
+
+|Rôle|Dimensions|Notation mathématique|
+| - | - | - |
+| variable cible<br>**target** | matrice $m * n$<br>m lignes, 1 colonnes | $y \in \mathbb{R}^{m \times 1}$|
+variables explicatives<br>**features** | matrice $m * n$<br>m lignes, n colonnes | $X \in \mathbb{R}^{m \times n}$ |
+
+> Avec `scikit-learn`, $y$ est souvent un vecteur de dimension $(m,)$  
+
 <img src="img/X_y.png" width=300>
 
+|||
+| - | - |
+| $m$ | nombre d'observations (lignes du dataset)       |
+| $n$ | nombre de variables explicatives (colonnes de $X$)           |
+| $y$ | vecteur des cibles $m \times 1$                 |
+| $X$ | matrice des variables explicatives $m \times n$ |
 
-## Intro
-<img src="img/linear_regression_pipeline.png" width=800>
-On choisi le modèle
-la machine apprend/choisi les paramètres
+
+
+## exemple de modele
+| *linéaire* | $$f_{(x)} = ax + b$$                           |
+| -------------------------------- | ---------------------------------------------- |
+| **fonction de coût**             | $$\frac{1}{2m} \sum_{i=1}^{m} (a.x + b -y)^2$$ |
+| **algorithme de minimisation**   | **descente de gradient**                       |
+
+
+
+## Etapes de travail
+
 
 Prédictions et classification
 
-1. Training set : permet d'imaginer des méthodes de prédiction
-2. Choix d'une méthode de prédiction
-3. Testing set : mesure l'écart entre les prédictions et les donnée de test : 
 
-- fonction de coût (erreurs entre les prédictions du modèle et les valeurs du dataset
+
+- fonction de coût : mesure les erreurs entre les prédictions du modèle et les valeurs du dataset
 - algorithme de minimisation de la fonction de coût en modifiant les paramètres
+
+---
+## Étapes de travail
+
+<img src="img/linear_regression_pipeline.png" width=800>
+
+### 1. Choix du modèle
+On choisit une **famille de modèles** adaptée (régression linéaire, polynomiale, etc.)
+
+### 2. Jeux de données, on divise les données en trois ensembles :
+
+- **Training set**  
+  Entraîner le modèle, c’est-à-dire à ajuster les paramètres pour minimiser l’erreur.
+
+- **Validation set**  
+  Tester différentes **configurations** ou **hyperparamètres**, et à **éviter le surapprentissage** (*overfitting*).
+
+- **Testing set**  
+  Evaluer la **performance finale** du modèle sur des données **jamais vues**.
+
+
+### 3. Apprentissage
+La machine **apprend** les **meilleurs paramètres** (poids, coefficients) à partir des données du **Training set**
+
+### 4. Évaluation du modèle
+
+- **Fonction de coût**  
+  Mesure l’erreur entre les valeurs prédites et les vraies valeurs.  
+
+
+- **Algorithme de minimisation**  
+  Trouve les meilleurs paramètres en **minimisant la fonction de coût**.  
+  Exemple : **descente de gradient**
+
+
+
+
+
+
 
 ## Modele
 
