@@ -101,7 +101,7 @@ En réalité, elle modélise la relation entre une variable d'entrée et la vale
 
 - **L'intervalle de prédiction** capture l'incertitude autour d'une valeur individuelle du résultat.
 
-<img src="img/linear_regression/Intervalle_confiance_et_prédiction.webp" width=400>
+<img src="img/linear_regression/Intervalle_confiance_et_prédiction.webp" width=400> 
 
 #### Intervalle de confiance
 Il indique la plage dans laquelle se situe la moyenne de la variable de sortie pour une entrée donnée.
