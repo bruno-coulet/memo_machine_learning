@@ -16,7 +16,7 @@ matrice $m * n$<br>
 | $m$ | nombre d'observations | |  |
 | $n$  | nombre de features ou    variables  |  |             |
 | $x_3^{(2)}$<br><br>$x_{feature}^{(exemple)}$ | 3ème feature de l'observation 2 | | |
-| erreur  | écart entre valeur réelle et prédiction | $(f_{(x^i)} - y_i)^2$<br><br> ou<br><br> $(y_i - f_{(x^i)})^2$<br>     | $(y_i - \hat{y})^2$<br><br>ou <br><br>$(\hat{y} - y_i)^2$ |
+| erreur  | écart entre valeur réelle et prédiction | $(f_{(x^i)} - y_i)^2$<br><br> ou <br><br> $(y_i - f_{(x^i)})^2$<br>     | $(\hat{y} - y_i)^2$<br><br> ou <br><br> $(y_i - \hat{y})^2$ |
 | $J(a,b)$                                     | fonction coût<br>paramètre a et b                                             | somme (de $i$ à $m$) de toutes les $(erreurs)^2$/ nombre d'observation | $$\frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y})^2$$          |
 
 L’**erreur** peut être exprimée au carré ou en valeur absolue, selon le contexte (MSE, MAE, ...)
@@ -43,7 +43,12 @@ La data est coupée en 2 ensembles Y et y :
 | variable cible<br>**target** | matrice $m * n$<br>m lignes, 1 colonnes | $y \in \mathbb{R}^{m \times 1}$|
 variables explicatives<br>**features** | matrice $m * n$<br>m lignes, n colonnes | $X \in \mathbb{R}^{m \times n}$ |
 
-> Avec `scikit-learn`, $y$ est souvent un vecteur de dimension $(m,)$  
+Avec `scikit-learn`, $y$ est souvent un vecteur de dimension $(m,)$
+
+En `NumPy` $(m,)$ et $(m,1)$ n’ont pas exactement le même comportement :
+
+- $(m,)$ est un vecteur 1D
+- $(m,1)$ est une matrice 2D avec une seule colonne.
 
 <img src="img/X_y.png" width=300>
 
@@ -51,7 +56,7 @@ variables explicatives<br>**features** | matrice $m * n$<br>m lignes, n colonnes
 | - | - |
 | $m$ | nombre d'observations (lignes du dataset)       |
 | $n$ | nombre de variables explicatives (colonnes de $X$)           |
-| $y$ | vecteur des cibles $m \times 1$                 |
+| $y$ | vecteur des cibles $m$                 |
 | $X$ | matrice des variables explicatives $m \times n$ |
 
 
@@ -59,7 +64,7 @@ variables explicatives<br>**features** | matrice $m * n$<br>m lignes, n colonnes
 ## exemple de modele
 | *linéaire* | $$f_{(x)} = ax + b$$                           |
 | -------------------------------- | ---------------------------------------------- |
-| **fonction de coût**             | $$\frac{1}{2m} \sum_{i=1}^{m} (a.x + b -y)^2$$ |
+| **fonction de coût**<br>le $2m$ au dénominateur est pratique<br>pour le calul de la dérivée             | $$\frac{1}{2m} \sum_{i=1}^{m} (a.x + b -y)^2$$ |
 | **algorithme de minimisation**   | **descente de gradient**                       |
 
 
