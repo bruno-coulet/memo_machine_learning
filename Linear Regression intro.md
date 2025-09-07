@@ -92,3 +92,31 @@ $$
 \hat{Y} = -5(200) + 2(350) + 50 = -250
 $$
 
+### Incertitude
+la régression linéaire ne prédit JAMAIS une valeur exacte.
+
+En réalité, elle modélise la relation entre une variable d'entrée et la valeur moyenne de la variable de sortie.
+
+- **L'intervalle de confiance** capture l'incertitude autour de la moyenne du résultat.
+
+- **L'intervalle de prédiction** capture l'incertitude autour d'une valeur individuelle du résultat.
+
+<img src="img/linear_regression/Intervalle_confiance_et_prédiction.webp" width=400> 
+
+#### Intervalle de confiance
+Il indique la plage dans laquelle se situe la moyenne de la variable de sortie pour une entrée donnée.
+
+Ainsi, un intervalle de confiance à 95 % signifie que :
+
+Pour une entrée donnée, nous sommes confiants à 95 % que la moyenne réelle se trouvera dans cette région.
+
+<img src="img/linear_regression/intervalle_confiance.webp" width=400>
+
+#### Intervalle de prédiction
+Indique la plage de valeurs possibles qu'une observation individuelle de la variable de sortie peut prendre.
+
+Il répond à la question : "Si nous connaissons la valeur d'entrée, quelle est la plage de valeurs que nous pourrions observer concrètement ?"
+
+Par exemple, un intervalle de prédiction à 95 % nous dit que :
+
+Pour une entrée donnée, 95 % des valeurs observées se situeront dans cette région.

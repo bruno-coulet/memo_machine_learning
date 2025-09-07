@@ -6,10 +6,12 @@ Dans le clustering non supervisé, le choix d'une **métrique de similarité ou 
 
 | Nom         | Formule                                                                 | Remarques                                                  |
 |--------------|------------------------------------------------------------------------|-------------------------------------------------------------|
-| Euclidienne  | $$ d(x, y) = \sqrt{ \sum (x_i - y_i)^2 } $$                           | Standard, utilisée dans K-Means                             |
+| Euclidienne $∥x∥$ | $$ d(x, y) = \sqrt{ \sum (x_i - y_i)^2 } $$                           | Standard, utilisée dans K-Means                             |
 | Manhattan    | $$ d(x, y) = \sum \left\| x_i - y_i \right\| $$                         | Moins sensible aux outliers                                 |
 | Minkowski    | $$ d(x, y) = \left( \sum_{i=1}^n \left\| x_i - y_i \right\|^p \right)^{1/p} $$ | Paramètre $$ p $$ variable (1 = Manhattan, 2 = Euclidienne) |
 | Mahalanobis  | Basée sur la matrice de covariance                                    | Prend en compte les corrélations                            |
+
+
 
 
 ## 🧾 Similarité pour données textuelles / binaires
