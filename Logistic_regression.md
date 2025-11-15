@@ -53,15 +53,13 @@ Les **odds** sont asymétriques
 #### Solution
 Solution
 On transforme l’axe des probabilités pour pouvoir utiliser un modèle linéaire :
-– Du domaine [0, 1] vers (−∞, +∞) grâce au logit :
+– Du domaine [0, 1] vers (−∞, +∞) grâce au logit :<br>
+$\text{logit}(p) = \log\left(\frac{p}{1-p}\right)]$
 
-\text{logit}(p) = \log\left(\frac{p}{1-p}\right)
-]
 
-– Puis, lors de la prédiction, on revient de (−∞, +∞) vers [0, 1] grâce à la fonction sigmoïde (inverse du logit) :
-
-\sigma(z) = \frac{1}{1 + e^{-z}}
-]
+– Puis, lors de la prédiction, on revient de (−∞, +∞) vers [0, 1]<br>
+grâce à la fonction sigmoïde (inverse du logit) :<br>
+$\sigma(z) = \frac{1}{1 + e^{-z}}]$
 
 Logarithme naturel = logarithme népérien, c’est-à-dire en base e (avec $e≈2.718$)
 
