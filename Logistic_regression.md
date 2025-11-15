@@ -16,8 +16,8 @@ Mesure la chance qu’un événement se produise, sur une échelle **de 0 à 1**
 ratio d'un **événement** / **ensemble des issues  possibles**
 |probabilité|calcul par comptage||||
 |-|-|-|-|-|
-|$\frac{\text{mon équipe gagne}} {\text{mon équipe gagne + mon équipe perd}}$|<img src="img/logistic_regression/probability.png" width=200>|5/8|0.625|1 - p (inverse)|
-|$\frac{\text{mon équipe perd}} {\text{mon équipe gagne + mon équipe perd}}$|<img src="img/logistic_regression/probability_losing.png" width=200>|3/8|0.375|1 - p (inverse)|
+|$\frac{\text{mon équipe gagne}} {\text{mon équipe gagne + mon équipe perd}}$|<img src="img/logistic_regression/probability.png" width=200>|5/8|0.625|1 - probabiité (inverse)|
+|$\frac{\text{mon équipe perd}} {\text{mon équipe gagne + mon équipe perd}}$|<img src="img/logistic_regression/probability_losing.png" width=200>|3/8|0.375|1 - probabiité (inverse)|
 
 
 **Si la probabilité d’un événement est $𝑝$**<br>p = probabilité de gagner
