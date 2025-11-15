@@ -70,9 +70,9 @@ Logarithme naturel = logarithme népérien, c’est-à-dire en base e (avec $e�
 
 Cela revient à centrer sur 0 et normaliser:
 |$\text{Probabilité p}$|$\text{logit(p)}$ |
-|-|-|
-|de 0.5 à 1|de 0 à $+\infty$|
-|de 0 à 0.5|de $-\infty$ à 0|
+|-|-|-|
+|de 0.5 à 1|de 0 à $+\infty$|prediction :classe 1|
+|de 0 à 0.5|de $-\infty$ à 0|prediction :classe 0|
 
 <img src="img/logistic_regression/log_function.png" width=400>
 
