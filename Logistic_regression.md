@@ -1,7 +1,4 @@
-
-La regression logistique et la regression linéaire font partie des Generalized Linear Model GLM
-
-
+La régression logistique est un cas particulier de la famille des Generalized Linear Models (GLM), utilisée lorsque la variable cible est binaire.
 
 #### odds (ou cotes)
 ratio entre la **probabilité qu’un événement se produise** / **probabilité qu’il ne se produise pas** :
