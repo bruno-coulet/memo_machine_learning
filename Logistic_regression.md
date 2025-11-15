@@ -16,8 +16,8 @@ Mesure la chance qu’un événement se produise, sur une échelle **de 0 à 1**
 ratio d'un **événement** / **ensemble des issues  possibles**
 |probabilité|calcul par comptage||||
 |-|-|-|-|-|
-|$\frac{\text{mon équipe gagne}} {\text{mon équipe gagne + mon équipe perd}}$|<img src="img/logistic_regression/probability.png" width=200>|5/8|0.625|1 - probabiité (inverse)|
-|$\frac{\text{mon équipe perd}} {\text{mon équipe gagne + mon équipe perd}}$|<img src="img/logistic_regression/probability_losing.png" width=200>|3/8|0.375|1 - probabiité (inverse)|
+|$\frac{\text{mon équipe gagne}} {\text{mon équipe gagne + mon équipe perd}}$|<img src="img/logistic_regression/probability.png" width=200>|5/8|0.625|1 - probabilité (inverse)|
+|$\frac{\text{mon équipe perd}} {\text{mon équipe gagne + mon équipe perd}}$|<img src="img/logistic_regression/probability_losing.png" width=200>|3/8|0.375|1 - probabilité (inverse)|
 
 
 **Si la probabilité d’un événement est $𝑝$**<br>p = probabilité de gagner
@@ -58,7 +58,7 @@ On **transforme l'axe y** de **probabilité de  0 à 1** en **log(odds)** :
 
 |logit (forme classique statistiques)|fonction sigmoïde (inverse)|
 |-|-|
-|transforme une sismoïde en droite|transforme une droite en sigmoïde<br> fonction d'activation de la regression logisitique|
+|transforme une sismoïde en droite|transforme une droite en sigmoïde<br>fonction d'activation de la regression logisitique|
 |étire l'axe y de 0 à 1 vers ($-\infty$, $+\infty$)|restreint l'axe y à l'intervalle [0, 1]<br>selon la proximité avec la frontière de décision|
 ||prend une valeur réelle et retourne une probabilité|
 |$$\text{logit(p)}=\log\left( \frac{p}{1 - p} \right)$$|$$\text{p}=\frac{e^\text{log(odds)}}{1 + e^\text{log(odds)}}=\frac{1}{1+e^{-z}}$$|
