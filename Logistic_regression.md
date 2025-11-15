@@ -51,7 +51,17 @@ Les **odds** sont asymétriques
 <img src="img/logistic_regression/asymetry.png" width=400>
 
 #### Solution
-On **transforme l'axe y** de **probabilité de  0 à 1** en **log(odds)** : 
+Solution
+On transforme l’axe des probabilités pour pouvoir utiliser un modèle linéaire :
+– Du domaine [0, 1] vers (−∞, +∞) grâce au logit :
+
+\text{logit}(p) = \log\left(\frac{p}{1-p}\right)
+]
+
+– Puis, lors de la prédiction, on revient de (−∞, +∞) vers [0, 1] grâce à la fonction sigmoïde (inverse du logit) :
+
+\sigma(z) = \frac{1}{1 + e^{-z}}
+]
 
 Logarithme naturel = logarithme népérien, c’est-à-dire en base e (avec $e≈2.718$)
 
