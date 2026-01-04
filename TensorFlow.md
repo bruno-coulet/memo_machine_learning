@@ -1,5 +1,5 @@
 
-dévrlopper par Google
+Développé par Google
 open source depuis fin 2015
 
 exécute des calculs de façons distribuée. optimisé poue entrainer etexécuter des reseaux de neurones artificielles.

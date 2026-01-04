@@ -41,7 +41,7 @@ Permet d’évaluer la qualité de la prédiction du modèle linéaire<br>
 |Sum of Square mean|Sum of Square fit|$R^2$|
 |-|-|-|
 |<img src="img/linear_regression/SS_mean.png" width=300>|<img src="img/linear_regression/SS_fit.png" width=300>|$$R^2=\frac{SS(mean)-SS(fit)}{SS(mean)}$$|
-|Résidus par rapport à la moyenne de $Y$|Résidus par rapport à la droite de régression|% de variation autour de la moyenne réduit par l'ajustement|
+|Résidus par rapport à $Y$ = la moyenne |Résidus par rapport à la droite de régression|% de variation autour de la moyenne réduit par l'ajustement|
 
 
 
