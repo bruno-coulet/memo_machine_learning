@@ -1,7 +1,4 @@
-
-La regression logistique et la regression linéaire font partie des Generalized Linear Model GLM
-
-
+La régression logistique est un cas particulier de la famille des Generalized Linear Models (GLM), utilisée lorsque la variable cible est binaire.
 
 #### odds (ou cotes)
 ratio entre la **probabilité qu’un événement se produise** / **probabilité qu’il ne se produise pas** :
@@ -16,8 +13,8 @@ Mesure la chance qu’un événement se produise, sur une échelle **de 0 à 1**
 ratio d'un **événement** / **ensemble des issues  possibles**
 |probabilité|calcul par comptage||||
 |-|-|-|-|-|
-|$\frac{\text{mon équipe gagne}} {\text{mon équipe gagne + mon équipe perd}}$|<img src="img/logistic_regression/probability.png" width=200>|5/8|0.625|1 - p (inverse)|
-|$\frac{\text{mon équipe perd}} {\text{mon équipe gagne + mon équipe perd}}$|<img src="img/logistic_regression/probability_losing.png" width=200>|3/8|0.375|1 - p (inverse)|
+|$\frac{\text{mon équipe gagne}} {\text{mon équipe gagne + mon équipe perd}}$|<img src="img/logistic_regression/probability.png" width=200>|5/8|0.625|1 - probabilité (inverse)|
+|$\frac{\text{mon équipe perd}} {\text{mon équipe gagne + mon équipe perd}}$|<img src="img/logistic_regression/probability_losing.png" width=200>|3/8|0.375|1 - probabilité (inverse)|
 
 
 **Si la probabilité d’un événement est $𝑝$**<br>p = probabilité de gagner
@@ -54,23 +51,33 @@ Les **odds** sont asymétriques
 <img src="img/logistic_regression/asymetry.png" width=400>
 
 #### Solution
-On **transforme l'axe y** de **probabilité de  0 à 1** en **log(odds)** : 
+
+On transforme l’axe des probabilités pour pouvoir utiliser un modèle linéaire :<br>
+Du domaine [0, 1] vers (−∞, +∞) grâce au logit :<br>
+$\text{logit}(p) = \log\left(\frac{p}{1-p}\right)$
+
+
+Puis, lors de la prédiction, on revient de (−∞, +∞) vers [0, 1]<br>
+grâce à la fonction sigmoïde (inverse du logit) :<br>
+$\sigma(z) = \frac{1}{1 + e^{-z}}$
+
+Logarithme naturel = logarithme népérien, c’est-à-dire en base e (avec $e≈2.718$)
 
 |logit (forme classique statistiques)|fonction sigmoïde (inverse)|
 |-|-|
-|transforme une sismoïde en droite|transforme une droite en sigmoïde|
-|étire l'axe y de 0 à 1 vers ($-\infty$, $+\infty$)|restreint l'axe y à l'intervalle [0, 1]|
+|transforme une sismoïde en droite|transforme une droite en sigmoïde<br>fonction d'activation de la regression logisitique|
+|étire l'axe y de 0 à 1 vers ($-\infty$, $+\infty$)|restreint l'axe y à l'intervalle [0, 1]<br>selon la proximité avec la frontière de décision|
 ||prend une valeur réelle et retourne une probabilité|
 |$$\text{logit(p)}=\log\left( \frac{p}{1 - p} \right)$$|$$\text{p}=\frac{e^\text{log(odds)}}{1 + e^\text{log(odds)}}=\frac{1}{1+e^{-z}}$$|
-|logarithme naturel = logarithme népérien|c’est-à-dire en base e (avec $e≈2.718$)|
+
 
 
 
 Cela revient à centrer sur 0 et normaliser:
-|$\text{Probabilité p}$|$\text{logit(p)}$ |
-|-|-|
-|de 0.5 à 1|de 0 à $+\infty$|
-|de 0 à 0.5|de $-\infty$ à 0|
+|$\text{Probabilité p}$|$\text{logit(p)}$|Prediction|
+|-|-|-|
+|de 0.5 à 1|de 0 à $+\infty$|classe 1|
+|de 0 à 0.5|de $-\infty$ à 0|classe 0|
 
 <img src="img/logistic_regression/log_function.png" width=400>
 
