@@ -3,8 +3,10 @@
 #### Formules théoriques
 <br>
 
-## Espérance
-(moyenne attendue)
+<div class="section-title" style="background-color: #5c5cff; padding: 10px 14px; border-radius: 8px; margin: 12px 0;">
+	<h2>Espérance</h2>
+</div>
+l’espérance est la valeur moyenne « attendue » si on répétait l’expérience un très grand nombre de fois.
 
 $$
 E(X) = \frac{\sum_{i=1}^{n} Y_i}{n}
@@ -20,8 +22,17 @@ $$
 
 <br>
 
-## Variance
-(dispersion des données)
+<div class="section-title" style="background-color: #5c5cff; padding: 10px 14px; border-radius: 8px; margin: 12px 0;">
+	<h2>Variance</h2>
+</div>
+(dispersion des données)<br>
+Mesure quantitative de la dispersion des valeurs autour de la moyenne :
+
+1. calculer la moyenne des données
+2. soustraire la moyenne à chaque valeur pour obtenir les écarts
+3. élever chaque écarts au carré
+4. calculer la moyenne des carrés
+
 $$
 Var(X) = E(Y^2) - [E(Y)]^2
 $$
@@ -36,8 +47,12 @@ $$
 
 <br>
 
-## Écart type
-
+<div class="section-title" style="background-color: #5c5cff; padding: 10px 14px; border-radius: 8px; margin: 12px 0;">
+	<h2>Écart type</h2>
+</div>
+La racine carrée de la variance<br>
+s’exprime dans la même unité que les données (contrairement à la variance)<br>
+moins sensible aux outliers 
 $$
 \sigma = \sqrt{Var(X)}
 $$
@@ -48,26 +63,24 @@ $$
 | $Var(X)$      | variance de la variable aléatoire $X$                                                      |
 | $\sqrt{...}$​ | racine carrée                                                                              |
 
-**variance corrigée (correction de Bessel) :**
+
+
+<br>
+
+<div class="section-title" style="background-color: #5c5cff; padding: 10px 14px; border-radius: 8px; margin: 12px 0;">
+	<h2>variance corrigée (correction de Bessel)</h2>
+</div>
 
 Pour calculer la variance sur un échantillon (et non une population entière)
-On divise par $n−1$ au lieu de $n$ (avec $n$ = nombre d'élément dans l'échantillon).
+On divise par $n−1$ au lieu de $n$<br>
+(avec $n$ = nombre d'élément dans l'échantillon)<br>
 Cela donne une estimation moins biaisée pour les petits échantillons
 
 
 
 #### Formules empiriques (calcul sur un jeu de données)
 
-**Moyenne empirique**$$\bar{Y} = \frac{1}{n} \sum_{i=1}^{n} Y_i$$
-
-| Symbole          | Signification                                              |
-| ---------------- | ---------------------------------------------------------- |
-| $\bar{Y}$        | Moyenne empirique des valeurs observées de $Y$             |
-| $n$              | Nombre total d'observations                                |
-| $\sum_{i=1}^{n}$ | Somme des valeurs de $Y_i$ de 1 à $n$                      |
-| $Y_i$            | Valeur observée de la variable aléatoire $Y$               |
-| $\frac{1}{n}$    | Facteur de normalisation (moyenne = somme divisée par $n$) |
-
+Les formules empiriques utilisent les valeurs observées d’un échantillon pour estimer les paramètres de la population.
 
  **Variance empirique  (pour la population)**
  Utilisée pour les calculs pratiques sur les données (machine learning).
@@ -83,7 +96,12 @@ Cela donne une estimation moins biaisée pour les petits échantillons
 | $(Y_i - \bar{Y})^2$ | Carré de l'écart entre chaque valeur observée et la moyenne      |
 | $\frac{1}{n}$       | Facteur de normalisation (division par le nombre d'observations) |
 
+
+
+<br>
+
  **Variance empirique (pour un échantillon - correction de Bessel)**       
+Elle s’appuie sur la moyenne empirique $\bar{Y}$ et le $n-1$ corrige le biais introduit par l’estimation de la moyenne sur un échantillon.
 $$s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (Y_i - \bar{Y})^2$$
 
 | Symbole             | Signification                                               |
@@ -96,6 +114,19 @@ $$s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (Y_i - \bar{Y})^2$$
 | $\bar{Y}$           | Moyenne empirique des valeurs observées de $Y$              |
 | $(Y_i - \bar{Y})^2$ | Carré de l'écart entre chaque valeur observée et la moyenne |
 | $\frac{1}{n-1}$     | Facteur de normalisation ajusté (division par $n-1$)        |
+
+
+**Moyenne empirique**
+C’est la moyenne calculée directement sur l’échantillon observé ; elle sert de base aux calculs de variance empirique et corrigée.
+$$\bar{Y} = \frac{1}{n} \sum_{i=1}^{n} Y_i$$
+
+| Symbole          | Signification                                              |
+| ---------------- | ---------------------------------------------------------- |
+| $\bar{Y}$        | Moyenne empirique des valeurs observées de $Y$             |
+| $n$              | Nombre total d'observations                                |
+| $\sum_{i=1}^{n}$ | Somme des valeurs de $Y_i$ de 1 à $n$                      |
+| $Y_i$            | Valeur observée de la variable aléatoire $Y$               |
+| $\frac{1}{n}$    | Facteur de normalisation (moyenne = somme divisée par $n$) |
 
 
 
