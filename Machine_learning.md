@@ -299,11 +299,11 @@ specificity = tn / (tn + fp)
 ```
 
 
-<img src="img/confusion_matrix/sensitivity.png" width=500>
+<img src="img/classification/confusion_matrix/sensitivity.png" width=500>
 
 **Sensitivity =**  Vrais positifs / (vrais positifsn + faux négatifs)
 
-<img src="img/confusion_matrix/specificity.png" width=500>
+<img src="img/classification/confusion_matrix/specificity.png" width=500>
 
 **Specificity =**  Vrais négatifs / (vrais négatifs + faux positifs)
 
@@ -313,11 +313,11 @@ Aide à choisir le meilleur seuil pour catégoriser les données
 
 Essayons de savoir si une souris est obèse (1) ou pas (0) en sachant son poids
 
-<img src="img/logistic_regression/curve.png" width=400>
+<img src="img/classification/logistic_regression/curve.png" width=400>
 
 Les souris rouges ne sont pas obèses (0)
 Les souris bleues sont  obèses (1)
-<img src="img/logistic_regression/mice.png" width=400>
+<img src="img/classification/logistic_regression/mice.png" width=400>
 
 Avec un seuil à 0,5
 
@@ -326,18 +326,18 @@ Avec un seuil à 0,5
 | souris obèse     | >= 0,5 |
 | souris pas obèse | <= 0,5 |
 
-<img src="img/logistic_regression/log_reg_04.png" width=400>
+<img src="img/classification/logistic_regression/log_reg_04.png" width=400>
 
 **Comparaison des différent seuils**
 Specificity = Vrais négatifs / (vrais négatifs + faux positifs)
 Sensitivity =   Vrais positifs / (vrais positifs + faux négatifs)
 
 Comparaison des différent seuils
-<img src="img/logistic_regression/ROC.png" width=400>
+<img src="img/classification/logistic_regression/ROC.png" width=400>
 
 
 
 ## AUC
 Area Under The Curve (ROC cuve)
-<img src="img/logistic_regression/AUC.png" width=400>
+<img src="img/classification/logistic_regression/AUC.png" width=400>
 

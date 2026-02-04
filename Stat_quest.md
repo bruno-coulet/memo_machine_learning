@@ -13,9 +13,9 @@ Utilise Testing Data pour évaluer les modèle de Machine Learning.
 
 L'important n'est pas comment un modèle colle au Training data mais de savoir si les prédictions sont justes.
 
-![Testing data](testing-data.png)
+![Testing data](img/testing-data.png)
 
-![prediction](training-testing-prediction.png)
+![prediction](img/training-testing-prediction.png)
 
 ## Cross Validation
 
@@ -29,17 +29,17 @@ Au final, toutes les données ont servies à l'entrainement et au test :
 
  Soit 4 tranches de données :
  
- - les 3 premières tranches sont utilisé pour l'entrainement  ![cross_validation_4](cross_validation_train4.png)
+ - les 3 premières tranches sont utilisé pour l'entrainement  ![cross_validation_4](img/cv/cross_validation_train_4.png)
    
  - la 4ème tranche est réservé aux tests
-![cross_validation_4](cross_validation_test4.png)
+![cross_validation_4](img/cv/cross_validation_test_4.png)
 
 - on note les résultats
-![](cross_validation_track4.png)
+![](img/cv/cross_validation_track_4.png)
 - puis c'est la 3ème tranche qui est réservée aux tests, on note les résultats
-![](cross_validation_track3.png)
+![](img/cv/cross_validation_track_3.png)
 - puis c'est la 2ème tranche qui est réservée aux tests, on note les résultats
-![](cross_validation_test2.png)
+![](img/cv/cross_validation_test_2.png)
 
 - enfin c'est la 1ère tranche qui est réservée aux tests, on note les résultats
 
@@ -52,31 +52,30 @@ Sert à comparer différentes méthodes de Machine Learning :
 - Logistic regression
 - k-nearest neighbors
 - support vector machines
-![comparaison des modèles](img/cross_validation_comparaison.png)
+![comparaison des modèles](img/cv/cross_validation_comparaison.png)
   
 
 ## Confusion Matrix
-tableau à n ligne et n colonne pour n paramètres à vérifier![confusion matrix](img/confusion_matrix_4_items.png)
+tableau à n ligne et n colonne pour n paramètres à vérifier![confusion matrix](img/classification/confusion_matrix/confusion_matrix_4_items.png)
 Permet de déterminé ce que le modèle à prédit correctement (diagonale verte) et incorrectement (faux positifs et faux négatifs en rouge)
-![[actual_predicted.png]]
+
 
 ## Sensitivity
 Recall ou Sensitivity
 (% of actual positive correctly predicted)
 =   Vrais positifs / (vrais positifs + faux négatifs)
 
-![sensitivity](img/sensitivity.png)
+![sensitivity](img/classification/confusion_matrix/sensitivity.png)
 
-![sensitivity2](img/sensitivity2.png)
+
 ## Specificity
 Specificity
 % of actual negative correctly predicted
 
 =   Vrais négatifs / (vrais négatifs + faux positifs)
 
-![specificity.png](img/specificity.png)
+![specificity.png](img/classification/confusion_matrix/specificity.png)
 
-![specificity2.png](img/specificity2.png)
 ## Precision
 % of predicted positives correctly predicted
 
@@ -108,11 +107,11 @@ Avec un seuil à 0,5
 **Comparaison des différent seuils**
 Specificity = Vrais négatifs / (vrais négatifs + faux positifs)
 Sensitivity =   Vrais positifs / (vrais positifs + faux négatifs)
-![Comparaison des différent seuils](img/ROC.png)
+![Comparaison des différent seuils](img/classification/logistic_regression/ROC.png)
 
 
 
 ## AUC
 Area Under The Curve (ROC cuve)
-![](img/AUC.png)
+![](img/classification/logistic_regression/AUC.png)
 

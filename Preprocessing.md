@@ -1,6 +1,6 @@
  
 
-![[transformer_estimator_2.png]]
+![](img/transformer/transformer.png)
 
 1. Régularisation
 Utiliser les pénalités L1 ou L2 dans les modèles.

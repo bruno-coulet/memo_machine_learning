@@ -149,7 +149,7 @@ plt.plot( fpr, tpr, label="modèle choisi")
 ```
 
 
-![ROC](img/logistic_regression/ROC_comments.png)
+![ROC](img/classification/logistic_regression/ROC_comments.png)
 modèle aléatoire en bleu
 un modèle parfait monterai le long de l'axe des ordonné jusqu'a y=1, puis longerai l'axe des abscices en restant à y = 1, c'est à dire 0 faux positif, que des vrais positif
 ### AUC
