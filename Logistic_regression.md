@@ -2,9 +2,9 @@ La régression logistique est un cas particulier de la famille des Generalized L
 
 #### odds (ou cotes)
 ratio entre la **probabilité qu’un événement se produise** / **probabilité qu’il ne se produise pas** :
-|odds/cote|calcul par comptage|||
-|-|-|-|-|
-|$\frac{\text{mon équipe gagne}} {\text{mon équipe perd}}$|<img src="img/classification/logistic_regression/odds.png" width=150>|5/3|1.7|
+|odds/cote|calcul par comptage|
+|-|-|
+|$\frac{\text{mon équipe gagne}} {\text{mon équipe perd}}$|<img src="img/classification/logistic_regression/odds.png" width=150>5/3=1.7|
 
 
 
