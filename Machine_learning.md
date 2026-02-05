@@ -127,7 +127,7 @@ $m$ observation
 |                                   Linéaire                                   |                                      Forme matricielle                                       | Paramètres                                  |
 | :--------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------: | ------------------------------------------- |
 |                              $f_{(x)} = ax + b$                              |                                       $F = X . \theta$                                       | vecteur $\theta$                            |
-| $$F = \begin{bmatrix}f_{(x^1)}\\f_{(x^2)}\\\dots\\f_{(x^m)}\\\end{bmatrix}$$ | $$X = \begin{bmatrix}x^{(1)} & 1 \\x^{(2)} & 1\\\dots & \dots \\x^{(m)} & 1\\\end{bmatrix}$$ | $\theta = \begin{bmatrix}a\\b\end{bmatrix}$ |
+| $F = \begin{bmatrix}f_{(x^1)}\\f_{(x^2)}\\\dots\\f_{(x^m)}\\\end{bmatrix}$ | $X = \begin{bmatrix}x^{(1)} & 1 \\x^{(2)} & 1\\\dots & \dots \\x^{(m)} & 1\\\end{bmatrix}$ | $\theta = \begin{bmatrix}a\\b\end{bmatrix}$ |
 
  $f_{(x^1)} \qquad = \qquad a.x^{(1)} + b \qquad = \qquad a.x^{(1)} +  1 . b$ 
 
