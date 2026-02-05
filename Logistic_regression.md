@@ -23,10 +23,10 @@ alors :
 |-|-|
 |$$\text{odds}=\frac{𝑝}{1-p}$$|$$\frac{\frac{5}{8}}{1 - \frac{5}{8}}= \frac{\frac{5}{8}}{\frac{3}{8}}=\frac{5}{3}=1.7$$|
 
-Et inversement 
-$$probabilité=\frac{odds}{1+odds}$$
-​
-une probabilité de 0,75 correspond à des odds de 3 (car 0,75/0,25=3)
+Et inversement<br>
+$$probabilité=\frac{odds}{1+odds}$$<br>
+<br>​
+une probabilité de 0,75 correspond à des odds de 3 (car 0,75/0,25=3)<br>
 
 
 ### logit : log (odds)
