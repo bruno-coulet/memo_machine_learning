@@ -74,8 +74,8 @@ $$
 
 $n$ = nombre d'élément dans l'échantillon<br>
 Pour calculer la variance sur un échantillon (et non une population entière)<br>
-On divise par ** $n−1$ **<br>
-au lieu de ** $n$ **<br>
+On divise par $n−1$ <br>
+au lieu de $n$ <br>
 Cela donne une estimation moins biaisée pour les petits échantillons
 
 
@@ -103,7 +103,8 @@ Les formules empiriques utilisent les valeurs observées d’un échantillon pou
 <br>
 
  **Variance empirique (pour un échantillon - correction de Bessel)**       
-Elle s’appuie sur la moyenne empirique $\bar{Y}$ et le $n-1$ corrige le biais introduit par l’estimation de la moyenne sur un échantillon.
+Elle s’appuie sur la moyenne empirique $\bar{Y}$ <br>
+le $n-1$ corrige le biais introduit par l’estimation de la moyenne sur un échantillon<br>
 $$s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (Y_i - \bar{Y})^2$$
 
 | Symbole             | Signification                                               |
@@ -119,7 +120,8 @@ $$s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (Y_i - \bar{Y})^2$$
 
 
 **Moyenne empirique**
-C’est la moyenne calculée directement sur l’échantillon observé ; elle sert de base aux calculs de variance empirique et corrigée.
+C’est la moyenne calculée directement sur l’échantillon observé<br>
+elle sert de base aux calculs de variance empirique et corrigée<br>
 $$\bar{Y} = \frac{1}{n} \sum_{i=1}^{n} Y_i$$
 
 | Symbole          | Signification                                              |
