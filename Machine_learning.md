@@ -65,21 +65,6 @@ y_2d = np.array([[1], [2], [3]])
 y_1d.shape  # (3,)
 y_2d.shape  # (3, 1)
 ```
-Différence clé :
-
-(
-𝑚
-,
-)
-(m,) → vecteur 1D
-
-(
-𝑚
-,
-1
-)
-(m,1) → matrice colonne 2D
-
 Opérations courantes :<br>
 ```python
 X = np.ones((3, 2))
@@ -87,6 +72,14 @@ X = np.ones((3, 2))
 X @ y_1d   # OK → résultat (3,)
 X @ y_2d   # OK → résultat (3, 1)
 ```
+
+Adapter la forme de y :
+```python
+y_1d = y_2d.ravel()      # (m,1) → (m,)
+y_2d = y_1d.reshape(-1, 1)  # (m,) → (m,1)
+```
+Bonne pratique scikit-learn :
+Utiliser y en forme $(m,)$ pour les modèles de régression et de classification.
 
 <img src="img/X_y.png" width=300>
 
