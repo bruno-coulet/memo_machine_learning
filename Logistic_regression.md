@@ -27,7 +27,7 @@ alors :
 Et inversement, la probabilité :<br>
 $$p=\frac{odds}{1+odds}$$<br>
 <br>​
-une probabilité de 0,75 correspond à des odds de 3 (car 0,75/0,25=3) :<br>
+une probabilité de 0,75 correspond à des odds de 3 :<br>
 
 $$p = 0{,}75$$
 
