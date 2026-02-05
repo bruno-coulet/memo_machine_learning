@@ -73,8 +73,9 @@ $$
 </div>
 
 $n$ = nombre d'élément dans l'échantillon<br>
-Pour calculer la variance sur un échantillon (et non une population entière)
-On divise par $n−1$ au lieu de $n$<br>
+Pour calculer la variance sur un échantillon (et non une population entière)<br>
+On divise par ** $n−1$ **<br>
+au lieu de ** $n$ **<br>
 Cela donne une estimation moins biaisée pour les petits échantillons
 
 
