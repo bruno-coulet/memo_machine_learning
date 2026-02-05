@@ -29,13 +29,10 @@ $$p=\frac{odds}{1+odds}$$<br>
 <br>​
 une probabilité de 0,75 correspond à des odds de 3 (car 0,75/0,25=3) :<br>
 
-**Probabilité :**
 $$p = 0{,}75$$
 
-**Probabilité de perdre :**
 $$1 - p = 0{,}25$$
 
-**Odds :**
 $$\text{odds} = \frac{p}{1 - p}
 = \frac{0{,}75}{0{,}25}
 = 3$$
