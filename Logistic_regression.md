@@ -36,9 +36,9 @@ Les **odds** sont asymétriques
 |odds|| | |plage|
 |-|-|-|-|-|
 |très favorable|<img src="img/classification/logistic_regression/odds_very_high.png" width=150>|32/3|10.7|entre 1 et $+\infty$|
-|favorable|<img src="img/classification/logistic_regression/odds_high.png" width=120>|8/3|2.66| |
+|favorable|<img src="img/classification/logistic_regression/odds_high.png" width=120>|8/3|2.66|entre 1 et $+\infty$|
 |défavorable|<img src="img/classification/logistic_regression/odds_low.png" width=70>|1/4|0.25|entre 1 et 0|
-|très défavorable|<img src="img/classification/logistic_regression/odds_very_low.png" width=150>|1/32|0.031||
+|très défavorable|<img src="img/classification/logistic_regression/odds_very_low.png" width=150>|1/32|0.031|entre 1 et 0|
 
 
 À valeur de probabilité égale mais opposée, la valeur des petits odds est compressée comparée aux grands odds :
