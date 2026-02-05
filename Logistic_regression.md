@@ -41,9 +41,9 @@ Les **odds** sont asymétriques
 |très défavorable|<img src="img/classification/logistic_regression/odds_very_low.png" width=150>|1/32|0.031|entre 1 et 0|
 
 
-À valeur de probabilité égale mais opposée, la valeur des petits odds est compressée comparée aux grands odds :
-1/6 = **0.17**
-6/1 = **6**
+À valeur de probabilité égale mais opposée, la valeur des petits odds est compressée comparée aux grands odds :<br>
+1/6 = **0.17**<br>
+6/1 = **6**<br>
 
 <img src="img/classification/logistic_regression/asymetry.png" width=400>
 
