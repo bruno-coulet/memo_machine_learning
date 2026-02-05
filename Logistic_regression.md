@@ -37,9 +37,6 @@ Les **odds** sont asymétriques
 |-|-|-|-|-|
 |très favorable|<img src="img/classification/logistic_regression/odds_very_high.png" width=150>|32/3|10.7|entre 1 et $+\infty$|
 |favorable|<img src="img/classification/logistic_regression/odds_high.png" width=120>|8/3|2.66| |
-
-||| | ||
-|-|-|-|-|-|
 |défavorable|<img src="img/classification/logistic_regression/odds_low.png" width=70>|1/4|0.25|entre 1 et 0|
 |très défavorable|<img src="img/classification/logistic_regression/odds_very_low.png" width=150>|1/32|0.031||
 
