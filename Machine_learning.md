@@ -50,6 +50,44 @@ En `NumPy` $(m,)$ et $(m,1)$ n’ont pas exactement le même comportement :
 - $(m,)$ est un vecteur 1D
 - $(m,1)$ est une matrice 2D avec une seule colonne.
 
+ **Conséquence pratique** :  
+Certaines opérations NumPy (broadcasting, produits matriciels, concaténations) peuvent donner des résultats différents selon la forme choisie.  
+C’est pourquoi scikit-learn attend généralement un `y` en forme **1D**.
+
+### Exemple NumPy : différences entre `(m,)` et `(m, 1)`
+
+```python
+import numpy as np
+
+y_1d = np.array([1, 2, 3])
+y_2d = np.array([[1], [2], [3]])
+
+y_1d.shape  # (3,)
+y_2d.shape  # (3, 1)
+```
+Différence clé :
+
+(
+𝑚
+,
+)
+(m,) → vecteur 1D
+
+(
+𝑚
+,
+1
+)
+(m,1) → matrice colonne 2D
+
+Opérations courantes :<br>
+```python
+X = np.ones((3, 2))
+
+X @ y_1d   # OK → résultat (3,)
+X @ y_2d   # OK → résultat (3, 1)
+```
+
 <img src="img/X_y.png" width=300>
 
 |||
