@@ -52,7 +52,8 @@ $$
 </div>
 La racine carrée de la variance<br>
 s’exprime dans la même unité que les données (contrairement à la variance)<br>
-moins sensible aux outliers 
+moins sensible aux outliers
+
 $$
 \sigma = \sqrt{Var(X)}
 $$
