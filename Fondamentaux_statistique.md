@@ -72,9 +72,9 @@ $$
 	<h2>variance corrigée (correction de Bessel)</h2>
 </div>
 
+$n$ = nombre d'élément dans l'échantillon<br>
 Pour calculer la variance sur un échantillon (et non une population entière)
 On divise par $n−1$ au lieu de $n$<br>
-(avec $n$ = nombre d'élément dans l'échantillon)<br>
 Cela donne une estimation moins biaisée pour les petits échantillons
 
 
