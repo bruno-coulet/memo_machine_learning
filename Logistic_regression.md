@@ -17,14 +17,15 @@ ratio d'un **événement** / **ensemble des issues  possibles**
 |$\frac{\text{mon équipe perd}} {\text{mon équipe gagne + mon équipe perd}}$|<img src="img/classification/logistic_regression/probability_losing.png" width=200> 3/8 = 0.375|1 - probabilité (inverse)|
 
 
-**Si la probabilité d’un événement est $𝑝$**<br>p = probabilité de gagner
+**Si la probabilité d’un événement est $𝑝$**<br>
+p = probabilité de gagner
 alors :
 |odds|calcul par probabilité|
 |-|-|
 |$$\text{odds}=\frac{𝑝}{1-p}$$|$$\frac{\frac{5}{8}}{1 - \frac{5}{8}}= \frac{\frac{5}{8}}{\frac{3}{8}}=\frac{5}{3}=1.7$$|
 
-Et inversement<br>
-$$probabilité=\frac{odds}{1+odds}$$<br>
+Et inversement, la probabilité :<br>
+$$p=\frac{odds}{1+odds}$$<br>
 <br>​
 une probabilité de 0,75 correspond à des odds de 3 (car 0,75/0,25=3)<br>
 
