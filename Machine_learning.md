@@ -163,11 +163,9 @@ $m$ observation
  $f_{(x^1)} \qquad = \qquad a.x^{(1)} + b \qquad = \qquad a.x^{(1)} +  1 . b$ 
 
 
-**Pour pouvoir faire le calcul matriciel $X \times \theta$
-
-Les dimensions des 2 matrices doivent être de type :
-	  $m \times n$ 
-	  $n \times \text{n'importe   quoi}$ 
+**Pour pouvoir faire le calcul matriciel $X \times \theta$**  
+Les dimensions des 2 matrices doivent être de type :   
+	  $m \times n \times \text{n'importe   quoi}$ 
   
 il faut une dimension commune, ici $n$
 
